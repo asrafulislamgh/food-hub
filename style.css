@@ -6,9 +6,15 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+
+/*============= Nav end ============*/
+
 nav,
 li {
   list-style: none;
+}
+h1 {
+  font-size: 50px;
 }
 a {
   text-decoration: none;
@@ -40,4 +46,40 @@ h2 span {
 nav li:hover {
   color: orangered;
   background-color: rgba(0, 0, 0, 0.2);
+}
+
+/*============= Nav end ============*/
+.top-banner-container {
+  display: flex;
+  padding: 50px 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-banner-container p {
+  padding: 20px 0;
+}
+.top-banner-container span {
+  color: orangered;
+}
+a.linked-button {
+  padding: 20px 50px;
+  font-size: 16px;
+  background-color: orangered;
+  display: inline-block;
+  font-weight: 500;
+  color: white;
+  border-radius: 60px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+}
+a.linked-button:hover {
+  background-color: tomato;
+}
+.half-side {
+  width: 50%;
+}
+.half-side img {
+  float: right;
 }
