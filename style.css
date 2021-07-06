@@ -21,6 +21,10 @@ a {
   color: inherit;
   cursor: pointer;
 }
+p {
+  line-height: 1.8em;
+}
+
 header {
   display: flex;
   padding: 0 100px;
@@ -50,7 +54,8 @@ nav li:hover {
 
 /*============= Top banner ============*/
 .top-banner-container,
-.about-me-container {
+.about-me-container,
+.our-recipies-container {
   display: flex;
   padding: 50px 100px;
   align-items: center;
@@ -58,11 +63,13 @@ nav li:hover {
   height: 650px;
 }
 .top-banner-container p,
-.about-me-container p {
+.about-me-container p,
+.our-recipies-container p {
   padding: 20px 0;
 }
 .top-banner-container span,
-.about-me-container span {
+.about-me-container span,
+.our-recipies-container span {
   color: orangered;
 }
 a.linked-button {
@@ -102,4 +109,51 @@ a.linked-button:hover {
 }
 .portrait-pic {
   height: 600px;
+}
+/*============= Our Recipies ============*/
+.our-recipies-container {
+  text-align: center;
+  justify-content: center;
+  height: 300px;
+}
+.our-recipies-item-container {
+  display: flex;
+  padding: 0 100px 100px;
+  justify-content: space-between;
+}
+.our-recipies-item {
+  background-color: white;
+  width: 30%;
+  padding: 20px;
+}
+.box-shadow {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.our-recipies-item img {
+  background-color: wheat;
+  width: 100%;
+}
+.our-recipies-item h3 {
+  padding: 20px 0;
+  font-weight: bold;
+}
+
+/*============= Our Followers ============*/
+
+.followers-container {
+  display: flex;
+}
+.followers-container-wrapper {
+  width: 100%;
+  display: flex;
+  margin: 50px 100px;
+  justify-content: space-evenly;
+}
+.followers {
+  width: 25%;
 }
