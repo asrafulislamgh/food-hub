@@ -118,7 +118,7 @@ a.linked-button:hover {
 }
 .our-recipies-item-container {
   display: flex;
-  padding: 0 100px 100px;
+  padding: 0 100px 50px;
   justify-content: space-between;
 }
 .our-recipies-item {
