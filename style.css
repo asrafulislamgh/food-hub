@@ -32,13 +32,17 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100%;
+  margin-bottom: 100px;
 }
 header nav {
   display: flex;
 }
-nav li {
+nav li a {
   padding: 30px 20px;
   color: #e0e0e0;
+  display: inline-block;
 }
 h2.logo-text {
   color: orangered;
@@ -51,6 +55,7 @@ h2 span {
 nav li:hover {
   color: orangered;
   background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 /*============= Top banner ============*/
@@ -68,7 +73,7 @@ nav li:hover {
 .about-me-container p,
 .our-recipies-container p,
 .reservation-text-container {
-  padding: 20px 0;
+  padding: 20px 0 20px;
 }
 .top-banner-container span,
 .about-me-container span,
@@ -123,7 +128,7 @@ a.linked-button:hover {
 }
 .our-recipies-item-container {
   display: flex;
-  padding: 0 100px 50px;
+  padding: 0 100px 0px;
   justify-content: space-between;
 }
 .our-recipies-item {
@@ -153,7 +158,7 @@ a.linked-button:hover {
 .followers-container,
 .reservation-container {
   display: flex;
-  padding: 100px;
+  padding: 150px 100px 0;
 }
 .followers-box,
 .reservation-container-items {
@@ -163,15 +168,20 @@ a.linked-button:hover {
   justify-content: space-between;
   text-align: center;
 }
+
 /*============= Reservation section ============*/
 .reservation-text-container {
   height: auto;
+  padding: 150px 0 50px;
 }
 .reservation-container-items {
   text-align: left;
 }
 .reservation-container {
-  padding-top: 50px;
+  margin-bottom: 100px;
+}
+.reservation-container {
+  padding-top: 20px;
 }
 .reservation-item {
   display: flex;
