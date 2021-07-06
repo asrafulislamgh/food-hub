@@ -23,6 +23,7 @@ a {
 }
 p {
   line-height: 1.8em;
+  color: #464646;
 }
 
 header {
@@ -55,21 +56,24 @@ nav li:hover {
 /*============= Top banner ============*/
 .top-banner-container,
 .about-me-container,
-.our-recipies-container {
+.our-recipies-container,
+.reservation-text-container {
   display: flex;
-  padding: 50px 100px;
+  padding: 150px 100px 70px 100px;
   align-items: center;
   justify-content: space-between;
   height: 650px;
 }
 .top-banner-container p,
 .about-me-container p,
-.our-recipies-container p {
+.our-recipies-container p,
+.reservation-text-container {
   padding: 20px 0;
 }
 .top-banner-container span,
 .about-me-container span,
-.our-recipies-container span {
+.our-recipies-container span,
+.reservation-text-container span {
   color: orangered;
 }
 a.linked-button {
@@ -111,7 +115,8 @@ a.linked-button:hover {
   height: 600px;
 }
 /*============= Our Recipies ============*/
-.our-recipies-container {
+.our-recipies-container,
+.reservation-text-container {
   text-align: center;
   justify-content: center;
   height: 300px;
@@ -145,19 +150,55 @@ a.linked-button:hover {
 
 /*============= Our Followers ============*/
 
-.followers-container {
+.followers-container,
+.reservation-container {
   display: flex;
   padding: 100px;
 }
-.followers-box {
+.followers-box,
+.reservation-container-items {
   padding: 50px 100px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   text-align: center;
 }
-/*============= Footer section ============*/
-footer {
+/*============= Reservation section ============*/
+.reservation-text-container {
+  height: auto;
+}
+.reservation-container-items {
+  text-align: left;
+}
+.reservation-container {
+  padding-top: 50px;
+}
+.reservation-item {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.reservation-item input {
+  padding: 10px 10px;
+  display: inline-block;
+  height: 45px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-color: cornsilk;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.reservation-item label {
+  padding: 10px 0;
+  display: inline-block;
+  width: 100%;
+}
+li.items {
+  width: 30%;
+}
+/*============= Footer top ============*/
+.footer-top {
   background-color: rgba(0, 0, 0, 0.9);
   height: 150px;
   display: flex;
@@ -165,6 +206,16 @@ footer {
   align-items: center;
   text-align: center;
 }
-footer p {
+.footer-top p {
   color: rgb(134, 134, 134);
+}
+
+/*============= Footer bottom ============*/
+footer {
+  background-color: black;
+  height: 80px;
+}
+footer nav {
+  display: flex;
+  justify-content: center;
 }
