@@ -147,6 +147,7 @@ a.linked-button:hover {
 .our-recipies-item img {
   background-color: wheat;
   width: 100%;
+  border-radius: 20px;
 }
 .our-recipies-item h3 {
   padding: 20px 0;
