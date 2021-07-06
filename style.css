@@ -147,13 +147,24 @@ a.linked-button:hover {
 
 .followers-container {
   display: flex;
+  padding: 100px;
 }
-.followers-container-wrapper {
+.followers-box {
+  padding: 50px 100px;
   width: 100%;
   display: flex;
-  margin: 50px 100px;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  text-align: center;
 }
-.followers {
-  width: 25%;
+/*============= Footer section ============*/
+footer {
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+footer p {
+  color: rgb(134, 134, 134);
 }
