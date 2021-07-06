@@ -7,7 +7,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-/*============= Nav end ============*/
+/*============= Nav bar ============*/
 
 nav,
 li {
@@ -48,17 +48,21 @@ nav li:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-/*============= Nav end ============*/
-.top-banner-container {
+/*============= Top banner ============*/
+.top-banner-container,
+.about-me-container {
   display: flex;
   padding: 50px 100px;
   align-items: center;
   justify-content: space-between;
+  height: 650px;
 }
-.top-banner-container p {
+.top-banner-container p,
+.about-me-container p {
   padding: 20px 0;
 }
-.top-banner-container span {
+.top-banner-container span,
+.about-me-container span {
   color: orangered;
 }
 a.linked-button {
@@ -81,5 +85,21 @@ a.linked-button:hover {
   width: 50%;
 }
 .half-side img {
-  float: right;
+}
+
+/*============= About Me ============*/
+.about-me {
+  width: 100%;
+}
+.about-me-container {
+  background-image: url(images/Frame\ 58.jpg);
+  background-repeat: no-repeat;
+  display: flex;
+  background-size: cover;
+  width: 100%;
+  padding: 50px 100px 0;
+  align-items: center;
+}
+.portrait-pic {
+  height: 600px;
 }
